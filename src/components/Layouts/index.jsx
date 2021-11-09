@@ -9,7 +9,7 @@ const NavbarMobile = React.lazy(() =>
 const Footer = React.lazy(() => import("components/Layouts/Footer"));
 
 function Index(props) {
-  const { setScroll, scroll, timer, setTimer } = useContext(Hooks);
+  const { setScroll, timer } = useContext(Hooks);
   React.useEffect(() => {
     window.onscroll = () =>
       window.pageYOffset > 10 ? setScroll(true) : setScroll(false);

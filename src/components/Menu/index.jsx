@@ -3,15 +3,10 @@ import Connect from "components/Transactions";
 import { Hooks } from "providers";
 function Index() {
   const {
-    setScroll,
-    scroll,
-    barMobile,
-    setBarMobile,
     wallet_,
-    setWallet_,
     datas,
   } = useContext(Hooks);
-  useEffect(() => {}, [datas, wallet_]);
+  useEffect(() => { }, [datas, wallet_]);
   return (
     <>
       {wallet_ && (
@@ -19,7 +14,7 @@ function Index() {
           <div className="menu-purchase__box">
             <p>DROP IS LIVE</p>
             <div>
-              <h1>{(datas?.[0]+3114) + "/3174"}</h1>
+              <h1>{(datas?.[0] + 3114) + "/3174"}</h1>
               <h2>PIZZA REMAINING</h2>
             </div>
             {/* <div style={{

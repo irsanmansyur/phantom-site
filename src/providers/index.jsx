@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext, createContext } from "react";
+import React, { useState,  createContext } from "react";
 export const Hooks = createContext();
 const Index = (props) => {
   const [scroll, setScroll] = useState("");

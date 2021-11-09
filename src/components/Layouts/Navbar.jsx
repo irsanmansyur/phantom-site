@@ -1,15 +1,10 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { Hooks } from "providers";
-import { Link } from "react-router-dom";
-import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
-import pdf from "assets/nft-pizza.pdf";
-import styled from "styled-components";
 import Connect from "components/Transactions";
 
 function Navbar() {
-  const { setScroll, scroll, barMobile, setBarMobile, wallet_, setWallet_ } =
+  const { scroll, wallet_ } =
     useContext(Hooks);
-  const ConnectButton = styled(WalletDialogButton);
   return (
     <>
       <div

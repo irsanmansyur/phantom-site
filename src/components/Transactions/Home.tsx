@@ -14,8 +14,7 @@ import {
   CandyMachine,
   awaitTransactionSignatureConfirmation,
   getCandyMachineState,
-  mintOneToken,
-  shortenAddress,
+  mintOneToken
 } from "./candy-machine";
 import { Hooks } from "providers";
 
@@ -206,17 +205,17 @@ const Home = (props: HomeProps) => {
             variant="contained"
             style={{
               // margin-top: 20px !important;
-    width: '100%',
-    backgroundColor: 'orange',
-    height: '40px',
-    borderRadius: '10px',
-    margin: '0 auto',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: '30px 0px',
-    color: 'white',
-    fontFamily :'Fira Code, monospace'
+              width: '100%',
+              backgroundColor: 'orange',
+              height: '40px',
+              borderRadius: '10px',
+              margin: '0 auto',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              padding: '30px 0px',
+              color: 'white',
+              fontFamily: 'Fira Code, monospace'
             }}
           >
             {isSoldOut ? (

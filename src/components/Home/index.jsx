@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import LoadingScreen from "components/LoadingScreen";
 import Banner from "components/Home/Banner";
 import Desc from "components/Home/Desc";
@@ -12,6 +12,7 @@ function Index() {
     setTimeout(() => {
       setTimer(false);
     }, 5000);
+
   }, []);
   return (
     <div>

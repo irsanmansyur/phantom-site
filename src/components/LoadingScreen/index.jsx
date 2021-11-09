@@ -1,5 +1,4 @@
 import React from "react";
-import Logos from "assets/img/logos.gif";
 function Index() {
   return (
     <>

@@ -1,6 +1,5 @@
 import React, { useContext, useEffect } from "react";
 import { Hooks } from "providers";
-import pdf from "assets/nft-pizza.pdf";
 
 import { Link } from "react-router-dom";
 function BarMobile() {
